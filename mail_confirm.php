@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
@@ -41,10 +40,11 @@
 
 			<form action="insert.php" method="POST">
 				<input type="submit" class="button2" value="登録する" />
-				<input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
-				<input type="hidden" name="mail" value="<?php echo $_POST['mail']; ?>">
-				<input type="hidden" name="age" value="<?php echo $_POST['age']."歳"; ?>">
-				<input type="hidden" name="comments" value="<?php echo $_POST['comments']; ?>">
+				
+				<input type="hidden" value="<?php echo $_POST['name']; ?>" name="name">
+				<input type="hidden" value="<?php echo $_POST['mail']; ?>" name="mail">
+				<input type="hidden" value="<?php echo $_POST['age']."歳"; ?>" name="age">
+				<input type="hidden" value="<?php echo $_POST['comments']; ?>" name="comments">
 			</form>
 		</div>
 

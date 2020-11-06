@@ -2,15 +2,14 @@
 
 mb_internal_encoding("utf8");
 
-$pdo=new PDO ("mysql:dbname=php_exercise; host=localhost;", "root", "mysql");
+$pdo = new PDO("mysql:dbname=php_exercise; host=localhost;", "root", "mysql");
 
-$pdo -> exec ("insert into contactform(name, mail, age, comments)values
-('".$_POST['name']."', '".$_POST['mail']."', '".$_POST['age']."', '".$_POST['comments']."'); ");
+$pdo->exec("insert into contactform(name, mail, age, comments)
+values('".$_POST['name']."','".$_POST['mail']."','".$_POST['age']."','".$_POST['comments']."');");
 ?>
 
 
 <!DOCTYPE html>
-
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
